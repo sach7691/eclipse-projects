@@ -1,0 +1,19 @@
+package com.ab.models;
+
+public class Book {
+
+	private int bookISBN;
+	
+	private String bookTitle;
+	
+	private String bookAuthor;
+	
+	private double bookPrice;
+	
+	
+	
+	
+	
+	
+	
+}

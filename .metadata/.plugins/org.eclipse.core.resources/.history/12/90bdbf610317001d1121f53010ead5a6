@@ -1,0 +1,36 @@
+package com.ab.apps;
+import java.util.ArrayList;
+import java.util.List;
+import com.ab.models.StudentData;
+
+public class ClassDemo1 {
+
+	public static void main(String[] args) {
+
+
+		StudentData s1 = new StudentData(1, "Sachini");
+		StudentData s2 = new StudentData(2, "Tom");
+		StudentData s3 = new StudentData(3, "Sam");
+		StudentData s4 = new StudentData(4, "Dan");
+		
+		
+		
+		List<StudentData> students = new ArrayList<>();
+		
+		students.add(s1);
+		students.add(s2);
+		students.add(s3);
+		students.add(s4);
+		
+		System.out.println(students);
+
+		
+		
+		
+		
+		
+		
+		
+	}
+
+}

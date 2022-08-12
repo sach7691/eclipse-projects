@@ -1,0 +1,14 @@
+package com.ab.daos;
+import java.util.List;
+import com.ab.models.Customer;
+
+public interface UnregisteredCustomerDAO {
+
+	public Customer registerCustomer(Customer customer);
+	public List<Customer> viewBooks();
+	public List<Book> searchBook(String bookName);
+	
+	
+	
+	
+}

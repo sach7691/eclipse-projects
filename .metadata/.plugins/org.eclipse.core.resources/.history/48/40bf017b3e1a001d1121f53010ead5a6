@@ -1,0 +1,7 @@
+package com.ab.daos;
+
+public interface CustomerDAO {
+	
+	public String loginCustomer(String customerEmail,String customerPassword);
+
+}

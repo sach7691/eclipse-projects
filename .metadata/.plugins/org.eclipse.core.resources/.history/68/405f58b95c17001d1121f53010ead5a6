@@ -1,0 +1,46 @@
+package com.ab.services;
+import com.ab.daos.CustomerDAO;
+import com.ab.models.Customer;
+public class CustomerServiceImpl implements CustomerService{
+
+
+
+	private CustomerDAO customerDAO;
+	
+	
+	public CustomerServiceImpl(CustomerDAO customerDAO){
+		
+		this.customerDAO = customerDAO;
+		
+	}
+
+	// Service class holds business logic
+	
+	@Override
+	public Customer registerCustomer(Customer customer){
+	
+	
+	   return customerDAO.storeCustomerDetails(customer);	
+	
+	}
+	
+	public boolean loginCustomer(String customerEmail,String customerPassword ) {
+		
+		boolean found = false;
+		
+		for(Customer c : customer) {
+			
+			if(c.getCustomerEmail().equals(customerEmail) && c.getCustomerPassword().equals(customerPassword)) {
+				
+				return true;
+			}
+		}
+		
+		return false;
+		
+	}
+
+	
+	
+
+}

@@ -1,0 +1,21 @@
+package com.ab.utilities;
+
+import java.sql.DriverManager;
+
+public class DatabaseConnection {
+	
+	
+	   Class.forName("com.mysql.cj.jdbc.Driver");
+	   
+	   Connection conn = DriverManager.getConnection("jdbc:mysql://")
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+}

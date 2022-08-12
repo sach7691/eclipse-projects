@@ -1,0 +1,68 @@
+package com.ab.daos;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.List;
+import com.ab.models.Customer;
+import com.ab.utilities.DatabaseConnection;
+
+public class CustomerDatabaseDAOImpl implements CustomerDAO {
+
+	private Connection conn;
+	private PreparedStatement pst;
+	private ResultSet rs;
+	
+	@Override
+	public Customer registerCustomers(Customer customer) {
+
+        //Step 2 : get a connection from DB Connection
+		conn = DatabaseConnection.getConnection();
+		
+		//Step 3: Create and prepare Statement
+		
+		String query = "INSERT into Customer (firstName,lastName,customerEmail,customerPassword) VALUES (?,?,?,?)";
+		
+		try {
+		
+			pst = conn.prepareStatement(query);
+			
+			//replace ? with actual values
+			
+			pst.setString(1, this.customer.getFirstName());
+			pst.setString(2, this.customer.getLastName());
+			pst.setString(3, this.customer.getCustomerEmail());
+			pst.setString(4, this.customer.getCustomerPassword());
+			
+			int i = pst.executeUpdate();
+			
+			if (i >0) {
+				
+				return customer;
+			}
+			
+		 }catch(SQLException e) {
+			 
+			 System.out.println(e);
+			 
+	     }
+					
+		return null;
+	}
+
+	
+	
+	
+	@Override
+	public Customer loginCustomers(Customer customer) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Customer> listRegisteredCustomers() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

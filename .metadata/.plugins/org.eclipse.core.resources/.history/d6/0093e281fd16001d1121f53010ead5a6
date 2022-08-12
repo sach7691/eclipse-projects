@@ -1,0 +1,17 @@
+package com.ab.models;
+
+public class Student {
+	
+	private int studentId;
+	
+	private String studentName;
+
+	public Student(int studentId, String studentName) {
+		super(); //object class constructor
+		this.studentId = studentId;
+		this.studentName = studentName;
+	}
+	
+	
+
+}

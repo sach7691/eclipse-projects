@@ -1,0 +1,48 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ page import="java.util.List" %>
+<%@page import="com.ab.models.Customer" %>
+
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>dashboard</title>
+</head>
+<body>
+<%
+List<Customer> cus = (List<Customer>)session.getAttribute("cList");
+%> 
+<h1>Welcome to Dashboard</h1>
+<label>To View all registered Customers</label>
+<a href="http://localhost:8080/customer-management-application/listRegisteredCustomersServlet" method ="POST">Click Here</a>
+
+<table border="1">
+  <tr>
+    <th>Customer ID</th>
+    <th>First Name</th>
+    <th>Last Name</th>
+    <th>Customer Email</th>
+  </tr>
+</table>
+
+<table border="1">
+    <c:forEach items="${cList}" var="c">
+        <tr>
+            <td><c:out value="${c.customerId}" /></td>
+            <td><c:out value="${c.firstName}" /></td>
+            <td><c:out value="${c.lastName}" /></td>
+            <td><c:out value="${c.customerEmail}" /></td>
+        </tr>
+    </c:forEach>
+</table>
+
+
+
+
+
+
+
+</body>
+</html>

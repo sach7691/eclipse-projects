@@ -1,0 +1,5 @@
+INDEX VERSION 1.131
+C:\Users\DELL\eclipse-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2710908706.index
+\customer-management-application\src\main\java
+C:\Users\DELL\eclipse-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2998170774.index
+\home-work-project\src\main\java

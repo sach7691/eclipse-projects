@@ -1,0 +1,13 @@
+package com.ab.daos;
+import java.util.List;
+import com.ab.models.Customer;
+
+public class CustomerDAO {
+	
+	
+	public Customer registerCustomers(Customer customer);
+	public Customer loginCustomers(Customer customer);
+	public List<Customer> displayRegisteredCustomers();
+	
+
+}
