@@ -9,6 +9,23 @@ public class Book {
 	private String bookAuthor;
 	
 	private double bookPrice;
+	
+	private int quantity;
+	
+	
+	
+	public Book() {
+		super();
+	}
+
+	public Book(int bookISBN, String bookTitle, String bookAuthor, double bookPrice, int quantity) {
+		super();
+		this.bookISBN = bookISBN;
+		this.bookTitle = bookTitle;
+		this.bookAuthor = bookAuthor;
+		this.bookPrice = bookPrice;
+		this.quantity = quantity;
+	}
 
 	public Book(int bookISBN, String bookTitle, String bookAuthor, double bookPrice) {
 		super();
@@ -17,6 +34,24 @@ public class Book {
 		this.bookAuthor = bookAuthor;
 		this.bookPrice = bookPrice;
 	}
+
+	public Book(int bookISBN, String bookTitle) {
+		super();
+		this.bookISBN = bookISBN;
+		this.bookTitle = bookTitle;
+	}
+	
+	public Book(int bookISBN) {
+		super();
+		this.bookISBN = bookISBN;
+		
+	}
+	public Book(String bookTitle) {
+		super();
+		this.bookTitle = bookTitle;
+		
+	}
+	
 
 	public int getBookISBN() {
 		return bookISBN;
@@ -41,7 +76,7 @@ public class Book {
 	public void setBookAuthor(String bookAuthor) {
 		this.bookAuthor = bookAuthor;
 	}
-
+	
 	public double getBookPrice() {
 		return bookPrice;
 	}
@@ -50,11 +85,21 @@ public class Book {
 		this.bookPrice = bookPrice;
 	}
 
+	
+	public void setQuantity(int quantity) {
+		this.quantity = quantity;
+	}
+	
+	public int getQuantity() {
+		return quantity;
+	}
+
 	@Override
 	public String toString() {
 		return "Book [bookISBN=" + bookISBN + ", bookTitle=" + bookTitle + ", bookAuthor=" + bookAuthor + ", bookPrice="
 				+ bookPrice + "]";
 	}
+
 	
 	
 }

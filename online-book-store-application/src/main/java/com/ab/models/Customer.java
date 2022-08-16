@@ -20,6 +20,14 @@ public class Customer {
 		this.customerEmail = customerEmail;
 		this.customerPassword = customerPassword;
 	}
+	
+	public Customer(String firstName, String lastName, String customerEmail, String customerPassword) {
+		super();
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.customerEmail = customerEmail;
+		this.customerPassword = customerPassword;
+	}
 
 	public Customer(String customerEmail, String customerPassword) {
 		super();
@@ -72,5 +80,8 @@ public class Customer {
 		return "Customer [customerId=" + customerId + ", firstName=" + firstName + ", lastName=" + lastName
 				+ ", customerEmail=" + customerEmail + "]";
 	}
+		
 
 }
+
+

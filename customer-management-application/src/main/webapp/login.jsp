@@ -14,7 +14,7 @@
   <input type="text" id="customerEmail" name="customerEmail"><br>
   <label for="customerpassword">Customer Password:</label><br>
   <input type="password" id="customerpassword" name="customerpassword"><br><br>
-  <input type="submit" value="Login">
+  <input type="submit" value="Login"> 
   </form>
   
   <label>Are you a New User ? </label><a href="index.jsp">Click Here to Register</a>
