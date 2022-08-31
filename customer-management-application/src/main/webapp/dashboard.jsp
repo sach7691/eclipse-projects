@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ page import="java.util.List" %>
-<%@page import="com.ab.models.Customer" %>
+<%@page import="com.ab.beans.Pet" %>
 
 <html>
 <head>
@@ -12,7 +12,9 @@
 </head>
 <body>
 <%
-List<Customer> cus = (List<Customer>)session.getAttribute("cList");
+p
+
+List<Pet> cus = (List<Pet>)session.getAttribute("cList");
 %> 
 <h1>Welcome to Dashboard</h1>
 <a href="http://localhost:8080/customer-management-application/listRegisteredCustomersServlet" method ="GET"></a>
