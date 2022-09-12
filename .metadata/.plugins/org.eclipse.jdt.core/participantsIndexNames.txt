@@ -1,5 +1,7 @@
 INDEX VERSION 1.131
 E:\java programming tools\test\eclipse-projects\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3902775849.index
 \spring-mvc-starter\src\main\java
+E:\java programming tools\test\eclipse-projects\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3413524763.index
+\my-trading-application\src\main\java
 E:\java programming tools\test\eclipse-projects\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3799144171.index
 \spring-mvc-demo1\src\main\java
